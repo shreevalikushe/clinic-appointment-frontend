@@ -12,7 +12,7 @@ export const Appointment = () => {
   const [toast, setToast] = useState(false);
   const navigate = useNavigate();
   const getSingleDoctor = () => {
-    fetch(`https://clinic-appointment.herokuapp.com/${id}`)
+    fetch(`https://clinic-appointment.herokuapp.com/bookings/${id}`)
       .then((r) => r.json())
       .then((r) => {
         setDocData(r.availability);
