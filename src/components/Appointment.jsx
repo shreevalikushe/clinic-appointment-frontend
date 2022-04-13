@@ -124,6 +124,7 @@ export const Appointment = () => {
             >
               <p>{item}</p>
               <Button
+                sx={{ border: "1px solid black" }}
                 value={item}
                 onClick={(e) => {
                   e.currentTarget.innerText = "Slot Booked";
